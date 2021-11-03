@@ -16,6 +16,8 @@
 		B8A1157D2732261D0091631F /* S6_TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1157C2732261D0091631F /* S6_TableViewControllerTests.swift */; };
 		B8A115872732261D0091631F /* S6_TableViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A115862732261D0091631F /* S6_TableViewControllerUITests.swift */; };
 		B8A115892732261D0091631F /* S6_TableViewControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A115882732261D0091631F /* S6_TableViewControllerUITestsLaunchTests.swift */; };
+		B8A1159D273227290091631F /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1159C273227290091631F /* Anime.swift */; };
+		B8A115A1273228B40091631F /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A115A0273228B40091631F /* AnimeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B8A115822732261D0091631F /* S6_TableViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S6_TableViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A115862732261D0091631F /* S6_TableViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S6_TableViewControllerUITests.swift; sourceTree = "<group>"; };
 		B8A115882732261D0091631F /* S6_TableViewControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S6_TableViewControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8A1159C273227290091631F /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		B8A115A0273228B40091631F /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,9 @@
 		B8A11564273226170091631F /* S6_TableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B8A11595273226400091631F /* Main */,
 				B8A11565273226170091631F /* AppDelegate.swift */,
 				B8A11567273226170091631F /* SceneDelegate.swift */,
-				B8A11569273226170091631F /* ViewController.swift */,
-				B8A1156B273226170091631F /* Main.storyboard */,
 				B8A1156E2732261D0091631F /* Assets.xcassets */,
 				B8A115702732261D0091631F /* LaunchScreen.storyboard */,
 				B8A115732732261D0091631F /* Info.plist */,
@@ -125,6 +128,49 @@
 				B8A115882732261D0091631F /* S6_TableViewControllerUITestsLaunchTests.swift */,
 			);
 			path = S6_TableViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		B8A11595273226400091631F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B8A1159A273226B80091631F /* Screens */,
+				B8A1159B273227010091631F /* ViewModel  */,
+				B8A11597273226820091631F /* View */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B8A115962732264F0091631F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8A1159C273227290091631F /* Anime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8A11597273226820091631F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8A11569273226170091631F /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B8A1159A273226B80091631F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B8A1156B273226170091631F /* Main.storyboard */,
+				B8A115962732264F0091631F /* Model */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		B8A1159B273227010091631F /* ViewModel  */ = {
+			isa = PBXGroup;
+			children = (
+				B8A115A0273228B40091631F /* AnimeViewModel.swift */,
+			);
+			path = "ViewModel ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A115A1273228B40091631F /* AnimeViewModel.swift in Sources */,
+				B8A1159D273227290091631F /* Anime.swift in Sources */,
 				B8A1156A273226170091631F /* ViewController.swift in Sources */,
 				B8A11566273226170091631F /* AppDelegate.swift in Sources */,
 				B8A11568273226170091631F /* SceneDelegate.swift in Sources */,
